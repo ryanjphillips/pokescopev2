@@ -1,0 +1,82 @@
+/* Import Pokemon Font Themes */
+@font-face {font-family: pokemonThemeHollow; src: url('pokemonhollow.ttf');}
+@font-face {font-family: pokemonThemeSolid;src: url('pokesolid.ttf');}
+@font-face {font-family: pokemonClassic; src: url('pokeclassic.ttf');}
+
+/* Force Font of all Elements */
+* {font-family: pokemonClassic;}
+
+/*Set Standard for the top level elements */
+html, body {height: 100%; width: 100%; padding: 0%; margin: 0%;}
+div#root{height: 100%; width:100%;}
+
+/* Navbar */
+nav{width: 100%; height: 8%; margin-bottom: 6px;}
+div.nav-div{display: flex; flex-direction: row; justify-content: center; align-items: center; 
+            width: 100%; height: 100%; background-color: #292C61; border:3px double #E5D255;}
+div.nav-title{flex: 6; display: flex; justify-content: center; align-items: center;}
+div.nav-title-div{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+p.nav-title-paragraph{margin: 0;}
+div.nav-login{flex: 1;}
+div.nav-hamburger{flex: 1;}
+div.nav-div{flex: 1;}
+div.nav-hamburger-div{display: flex; justify-content: center; align-items: center;}
+div.nav-login-div{display: flex; justify-content: center; align-items: center;}
+h1.nav-title-header {color: #E5D255; text-shadow: 5px 5px #4078C7; 
+            font-family: pokemonThemeSolid !important; margin: 0%; font-size: 2em;}
+p.nav-title-paragraph{font-size: .75em; color: #E5D255; text-shadow: 3px 3px #4078C7;}
+
+/* Main */
+main{width: 100%; height: 500px; display: flex; justify-content: center;}
+div.main-div{width: 90%; height: 100%; background-image: url('gen1background.jpeg'); background-position: center; filter:drop-shadow(10px 10px 12px gray); display: flex;flex-direction: row; align-items: center; justify-content: center;}
+div.background-div{width: 100%; height: 100%; background-image: url('pokemonRed.gif'), url('transgameboy.png'); background-repeat: no-repeat, no-repeat; background-size: 160px, 500px; background-position: center top 68px, center top; filter:drop-shadow(20px 20px 30px black)}
+div.background-left-div{background-color: rgba(41,44,97,.7); order: -1; height: 100%; display: flex; justify-content: center; align-items: center; border: #E5D255 solid 1px ; width: 8%;}
+div.background-right-div{background-color: rgba(41,44,97,.7); order: 1; height: 100%; display: flex; justify-content: center; align-items: center; border: #E5D255 solid 1px ; width: 8%;}
+p.main-background-arrowright{color: #E5D255; font-size: 30px; margin: 0px; padding: 0px;}
+p.main-background-arrowleft{color: #E5D255; font-size: 30px; margin: 0px; padding: 0px;}
+
+.background-right-div:hover{background-color:rgba(41,44,97,1);}
+.background-left-div:hover{background-color:rgba(41,44,97,1);}
+
+/* Section */
+section{width: 100%; height: 200px;}
+div.section-div{display: flex; flex-direction: column; width: 100%; height: 100%;}
+div.section-game-one{display: flex; flex: 1; width: 100%; flex-direction: row; order: 0;}
+div.game-one-fullsection{flex: 6.2;height: 100%; width: 100%; background-color: #A0131B; display: flex; justify-content: center;}
+h3.game-one-header{color: #E5D255; font-size: 20px; margin: 0%; padding: 0%; text-decoration: underline;}
+div.game-one-halfsection{flex: 1;height: 50%; width: 100%; background-color: #A0131B; align-self: flex-end; border-top: solid black 1px;}
+
+div.section-game-two{display: flex; flex: 1; width: 100%; flex-direction: row; position: relative; top: -35px; order: 1;}
+div.game-two-fullsection{flex: 6.1;height: 100%; width: 100%; background-color: #292C61; display: flex; justify-content: center;}
+h3.game-two-header{color: #A0131B; font-size: 20px; margin: 0%; padding: 0%; text-decoration: underline;}
+div.game-two-halfsection{flex: 1;height: 50%; width: 100%; background-color: #292C61; align-self: flex-end; border-top: solid black 1px;}
+
+div.section-game-three{display: flex; flex: 1; width: 100%; flex-direction: row; position: relative; top: -70px; order: 2;}
+div.game-three-fullsection{flex: 6;height: 100%; width: 100%; background-color: #E5D255; display: flex; justify-content: center;}
+h3.game-three-header{color: #292C61; font-size: 20px; margin: 0%; padding: 0%; text-decoration: underline;}
+div.game-three-halfsection{flex: 1;height: 50%; width: 100%; background-color: #E5D255; align-self: flex-end; border-top: solid black 1px;}
+
+div.testDiv{height: 1000px; width: 100%;}
+
+@media screen and (max-width: 800px){
+    p.main-background-arrowleft{font-size: 20px;}
+    p.main-background-arrowright{font-size: 20px;}
+}
+
+@media screen and (max-width: 500px){
+    p.main-background-arrowleft{font-size: 10px;}
+    p.main-background-arrowright{font-size: 10px;}
+    div.background-div{background-size: 110px, 350px; background-position: center top 48px, center top;}
+    h1.nav-title-header{font-size: 1.50em;}
+    p.nav-title-paragraph{font-size: .60em;}
+}
+
+@media screen and (max-width: 330px) {
+    h1.nav-title-header{font-size: 1.25em;}
+    p.nav-title-paragraph{font-size: .50em;}
+    
+}
+
+@media screen and (max-height: 730px) {
+    p.nav-title-paragraph{font-size: .50em;}
+}
