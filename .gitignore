@@ -34,3 +34,9 @@ yarn-error.log*
 /public/red.png
 /public/yellow.png
 /public/blue.png
+
+/public/*.png
+/public/*jpeg
+/src/*gif
+/src/*png
+/src/*jpeg
