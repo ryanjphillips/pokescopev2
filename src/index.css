@@ -27,7 +27,7 @@ h1.nav-title-header {color: #E5D255; text-shadow: 5px 5px #4078C7;
 p.nav-title-paragraph{font-size: .75em; color: #E5D255; text-shadow: 3px 3px #4078C7;}
 
 /* Main */
-main{width: 100%; height: 500px; display: flex; justify-content: center;}
+main{width: 100%; height: 500px; display: flex; justify-content: center; background-color: lightgray;}
 div.main-div{width: 90%; height: 100%; background-image: url('gen1background.jpeg'); background-position: center; filter:drop-shadow(10px 10px 12px gray); display: flex;flex-direction: row; align-items: center; justify-content: center;}
 div.background-div{width: 100%; height: 100%; background-image: url('pokemonRed.gif'), url('transgameboy.png'); background-repeat: no-repeat, no-repeat; background-size: 160px, 500px; background-position: center top 68px, center top; filter:drop-shadow(20px 20px 30px black)}
 div.background-left-div{background-color: rgba(41,44,97,.7); order: -1; height: 100%; display: flex; justify-content: center; align-items: center; border: #E5D255 solid 1px ; width: 8%;}
@@ -39,28 +39,87 @@ p.main-background-arrowleft{color: #E5D255; font-size: 30px; margin: 0px; paddin
 .background-left-div:hover{background-color:rgba(41,44,97,1);}
 
 /* Section */
-section{width: 100%; height: 200px;}
-div.section-div{display: flex; flex-direction: column; width: 100%; height: 100%;}
+section{width: 100%; height: 200px; justify-content: center; align-content: center; display: flex; background-color: lightgray;}
+div.section-div{display: flex; flex-direction: column; width: 90%; height: 100%; justify-content: center; align-content: center;}
 div.section-game-one{display: flex; flex: 1; width: 100%; flex-direction: row; order: 0;}
-div.game-one-fullsection{flex: 6.2;height: 100%; width: 100%; background-color: #A0131B; display: flex; justify-content: center;}
+div.game-one-fullsection{flex: 10;height: 100%; width: 100%; background-color: #A0131B; display: flex; justify-content: center;}
 h3.game-one-header{color: #E5D255; font-size: 20px; margin: 0%; padding: 0%; text-decoration: underline;}
-div.game-one-halfsection{flex: 1;height: 50%; width: 100%; background-color: #A0131B; align-self: flex-end; border-top: solid black 1px;}
+div.game-one-halfsection{flex: .5;height: 50%; width: 100%; background-color: #A0131B; align-self: flex-end; border-top: solid black 1px;}
 
-div.section-game-two{display: flex; flex: 1; width: 100%; flex-direction: row; position: relative; top: -35px; order: 1;}
-div.game-two-fullsection{flex: 6.1;height: 100%; width: 100%; background-color: #292C61; display: flex; justify-content: center;}
+div.section-game-two{display: flex; flex: 1; width: 100%; flex-direction: row; justify-content: center; align-content: center; order: 0;}
+div.game-two-fullsection{flex: 10;height: 100%; width: 100%; background-color: #292C61; display: flex; justify-content: center;}
 h3.game-two-header{color: #A0131B; font-size: 20px; margin: 0%; padding: 0%; text-decoration: underline;}
-div.game-two-halfsection{flex: 1;height: 50%; width: 100%; background-color: #292C61; align-self: flex-end; border-top: solid black 1px;}
+div.game-two-halfsection{flex: .5;height: 50%; width: 100%; background-color: #292C61; align-self: flex-end; border-top: solid black 1px;}
 
-div.section-game-three{display: flex; flex: 1; width: 100%; flex-direction: row; position: relative; top: -70px; order: 2;}
-div.game-three-fullsection{flex: 6;height: 100%; width: 100%; background-color: #E5D255; display: flex; justify-content: center;}
+div.section-game-three{display: flex; flex: 1; width: 100%; flex-direction: row; order: 0;}
+div.game-three-fullsection{flex: 10;height: 100%; width: 100%; background-color: #E5D255; display: flex; justify-content: center;}
 h3.game-three-header{color: #292C61; font-size: 20px; margin: 0%; padding: 0%; text-decoration: underline;}
-div.game-three-halfsection{flex: 1;height: 50%; width: 100%; background-color: #E5D255; align-self: flex-end; border-top: solid black 1px;}
+div.game-three-halfsection{flex: .5;height: 50%; width: 100%; background-color: #E5D255; align-self: flex-end; border-top: solid black 1px;}
 
-div.testDiv{height: 1000px; width: 100%;}
+div.game-three-fullsection:hover{background-color: gray;}
+div.game-two-fullsection:hover{background-color: gray;}
+div.game-one-fullsection:hover{background-color: gray;}
+
+
+/* Article One */
+article{width: 100%; height:950px; display: flex; justify-content: center; background-color: lightgray;}
+div.article-div{display: flex; width: 90%; height: 100%; flex-direction: column; align-content: center; justify-content: center;}
+div.article-cartridge-head{flex: 1.5; background-color: #A0131B; display: flex;}
+div.head-part-one{flex: .5; display: flex; flex-direction: column;}
+div.head-part-one > div {flex: 1; background-color: gray; border: black 1px solid; border-radius: 10px;}
+div.head-part-three > div {flex: 1; background-color: gray; border: black 1px solid; border-radius: 10px;}
+div.head-part-two{flex: 6; border: black solid 1px; border-radius: 100px;}
+div.head-part-three{flex:.5; display: flex; flex-direction: column;}
+div.article-cartridge-body{flex: 7; background-color: #A0131B;}
+div.article-cartridge-footer{flex:.75; background-color: #A0131B;}
+span.TM{font-size: 10px;}
+span.GAMEBOY{font-size: 60px;}
+div.head-cartridge-desc{display: flex; justify-content: center; align-content: center;}
+span.NINTENDO{font-size: 40px;}
+h1.cartidge-desc{margin: 30px; padding: 0%;}
+div.article-cartridge-body{display: flex; justify-content: center; align-content: center; flex-direction: row;}
+div.body-part-one{flex: .5;}
+div.body-part-two{flex: 6; border: 1px solid black; border-radius: 5px; margin-top: 30px; background-repeat: no-repeat; background-position: center; display: flex; justify-content: center; align-items: center;}
+div.body-part-three{flex:.5;}
+div.article-cartridge-footer{display: flex; flex-direction: row; justify-content: center; align-content: center;}
+div.footer-part-one{flex: .5}
+div.footer-part-three{ flex: .5}
+div.footer-part-two{flex: 6; display: flex; justify-content: center; align-items: center;}
+div.paragraph-div{background-color: rgba(211, 211, 211, 0.637); width: 90%; height: 90%; border: black 5px double; border-radius: 10px;}
+p.body-paragraph-div{font-size: 1rem; color: black; margin: 0px; text-align: center;}
+
+@media screen and (max-width: 1171px){
+    span.TM{font-size: 9px;}
+    span.GAMEBOY{font-size: 50px;}
+    span.NINTENDO{font-size: 30px;}
+}
+
+@media screen and (max-width: 964px){
+    span.TM{font-size: 8px;}
+    span.GAMEBOY{font-size: 40px;}
+    span.NINTENDO{font-size: 20px;}
+}
 
 @media screen and (max-width: 800px){
     p.main-background-arrowleft{font-size: 20px;}
     p.main-background-arrowright{font-size: 20px;}
+}
+@media screen and (max-width: 757px){
+    span.TM{font-size: 7px;}
+    span.GAMEBOY{font-size: 30px;}
+    span.NINTENDO{font-size: 10px;}
+    h1.cartidge-desc{margin-top: 50px;}
+}
+
+@media screen and (max-height: 730px) {
+    p.nav-title-paragraph{font-size: .50em;}
+}
+
+@media screen and (max-width: 551px){
+    span.TM{font-size: 6px;}
+    span.GAMEBOY{font-size: 25px;}
+    span.NINTENDO{font-size: 10px;}
+    span.cartridge-desc{font-size: 5px;}
 }
 
 @media screen and (max-width: 500px){
@@ -71,12 +130,20 @@ div.testDiv{height: 1000px; width: 100%;}
     p.nav-title-paragraph{font-size: .60em;}
 }
 
+@media screen and (max-width: 490px){
+    span.TM{font-size: 5px;}
+    span.GAMEBOY{font-size: 10px;}
+    span.NINTENDO{font-size: 8px;}
+    h3.game-two-header{font-size: 18px;}
+    h3.game-one-header{font-size: 18px;}
+    h3.game-three-header{font-size: 18px;}
+}
+
 @media screen and (max-width: 330px) {
     h1.nav-title-header{font-size: 1.25em;}
     p.nav-title-paragraph{font-size: .50em;}
-    
-}
-
-@media screen and (max-height: 730px) {
-    p.nav-title-paragraph{font-size: .50em;}
+    h3.game-two-header{font-size: 15px;}
+    h3.game-one-header{font-size: 15px;}
+    h3.game-three-header{font-size: 15px;}
+    span.cartridge-desc{font-size: 5px;}
 }
