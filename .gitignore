@@ -23,8 +23,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# images
+
 /public/pokeball.png
-/src//pokemonRed.gif
+/src/pokemonRed.gif
 /src/transgameboy.png
 /src/gen1background.jpeg
 /public/red.png
